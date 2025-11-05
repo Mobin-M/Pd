@@ -71,6 +71,7 @@
 #X obj 189 290 r \$0-Q;
 #X obj 345 218 inlet;
 #X obj 345 243 s \$0-i-Q-inlet;
+#X text 12 9 VERISON 0;
 #X connect 0 0 2 0;
 #X connect 0 0 17 0;
 #X connect 2 0 6 0;

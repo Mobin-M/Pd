@@ -59,6 +59,7 @@
 #X connect 17 1 19 0;
 #X connect 17 2 20 0;
 #X restore 38 39 pd parameter-handling;
+#X text 6 4 VERSION 0;
 #X connect 0 0 3 0;
 #X connect 0 0 1 0;
 #X connect 1 0 4 0;
