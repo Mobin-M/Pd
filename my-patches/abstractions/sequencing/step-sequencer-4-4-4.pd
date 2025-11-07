@@ -1,4 +1,4 @@
-#N canvas 178 32 717 926 12;
+#N canvas 676 36 717 926 12;
 #X obj 14 748 outlet;
 #X obj 67 724 outlet;
 #X obj 474 1056 hradio 20 1 0 4 \$0-bank-sel \$0-i-bank-sel empty 0 -10 0 12 #fcfcfc #000000 #000000 0;
@@ -1340,7 +1340,7 @@
 #X obj 183 45 r \$0-open-swing;
 #X obj 183 142 r \$0-open-vel;
 #X obj 183 165 f \$0;
-#N canvas 1036 314 321 171 knob-\$0-velocities 0;
+#N canvas 2604 335 321 171 knob-\$0-velocities 0;
 #X obj 110 27 vsl 20 25 0 1 0 0 \$0-y1 \$0-iy1 empty 0 -9 0 12 #ffffff #000000 #000000 0 1;
 #X obj 130 27 vsl 20 25 0 1 0 0 \$0-y2 \$0-iy2 empty 0 -9 0 12 #ffffff #000000 #000000 0 1;
 #X obj 150 27 vsl 20 25 0 1 0 0 \$0-y3 \$0-iy3 empty 0 -9 0 12 #ffffff #000000 #000000 0 1;
@@ -1360,7 +1360,7 @@
 #X coords 0 171 1 170 85 60 0;
 #X restore 391 203 pd knob-\$0-velocities;
 #X msg 183 188 \; pd-knob-\$1-velocities vis 1;
-#N canvas 712 316 322 169 knob-\$0-swings 0;
+#N canvas 2742 380 322 169 knob-\$0-swings 0;
 #X obj 110 25 vsl 20 25 0 0 0 0 \$0-x1 \$0-ix1 empty 0 -9 0 12 #ffffff #000000 #000000 0 1;
 #X obj 130 25 vsl 20 25 0 0 0 0 \$0-x2 \$0-ix2 empty 0 -9 0 12 #ffffff #000000 #000000 0 1;
 #X obj 150 25 vsl 20 25 0 0 0 0 \$0-x3 \$0-ix3 empty 0 -9 0 12 #ffffff #000000 #000000 0 1;
