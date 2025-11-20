@@ -17,7 +17,7 @@
 #A saved 10 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8;
 #A saved 11 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8;
 #X obj 84 634 output~;
-#X connect 0 0 3 0;
-#X connect 0 0 3 1;
+#X obj 493 397 signature 10;
+#A saved 4 4;
 #X connect 2 0 0 1;
 #X connect 2 1 0 0;

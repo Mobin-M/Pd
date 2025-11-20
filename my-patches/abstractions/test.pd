@@ -1,0 +1,7 @@
+#N canvas 2042 120 1079 710 12;
+#X obj 239 129 master-clock;
+#A saved 362;
+#X obj 234 307 signature;
+#A saved 94 47;
+#X obj 488 308 signature 5 6;
+#A saved 48 68;
