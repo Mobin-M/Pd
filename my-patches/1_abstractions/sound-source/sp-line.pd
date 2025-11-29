@@ -1,4 +1,4 @@
-#N canvas 1906 -12 1920 1009 12;
+#N canvas 1906 -12 1854 977 12;
 #N canvas 2803 86 561 575 sample-loading 0;
 #X obj 15 91 openpanel;
 #X obj 187 171 f \$0;
@@ -63,7 +63,7 @@
 #X connect 29 0 30 0;
 #X connect 31 0 0 0;
 #X restore 20 282 pd sample-loading;
-#N canvas 2497 161 985 708 sample-playing 1;
+#N canvas 2497 161 985 708 sample-playing 0;
 #X obj 14 9 r \$0-play;
 #N canvas 2321 312 856 547 Playback-Cursor-Loop 0;
 #X obj 19 194 del;
@@ -288,7 +288,7 @@
 #X connect 16 0 8 0;
 #X connect 17 0 16 1;
 #X connect 18 0 16 1;
-#X restore 22 371 pd sample-playing;
+#X restore 21 310 pd sample-playing;
 #N canvas 521 304 461 158 initializations 0;
 #X msg 16 80 \; \$1-sample edit 0 \;;
 #X obj 16 57 f \$0;
@@ -306,8 +306,10 @@
 #X connect 7 0 6 0;
 #X restore 20 230 pd initializations;
 #N canvas 52 20 1854 977 (subpatch) 0;
-#X array \$0-sample 18432 float 2;
-#X coords 0 1 18432 -1 88 88 1 0 0;
+#X array \$0-sample 17674 float 2;
+#A color 0;
+#A width 2;
+#X coords 0 1 17674 -1 88 88 1 0 0;
 #X restore 106 119 graph;
 #X obj 197 119 bng 16 250 50 0 \$0-load \$0-i-load empty 23 10 0 10 #faff00 #000000 #000000;
 #X obj 197 137 bng 16 250 50 0 \$0-play \$0-i-play empty 25 10 0 12 #00ff04 #000000 #000000;
@@ -324,7 +326,7 @@
 #X obj 44 95 t b f, f 2;
 #X obj 73 95 t b f, f 2;
 #X obj 244 18 text define -k \$0-parameters;
-#A set 0 0 symbol \;;
+#A set 0 0 /home/mobin/Documents/Sounds/kalhor-spring.wav \;;
 #X obj 44 210 text set \$0-parameters 0 0;
 #X obj 73 254 savestate;
 #X obj 133 307 text sequence \$0-parameters;
@@ -367,6 +369,8 @@
 #X restore 20 256 pd parameter-handling;
 #X text 750 8 Note: 1) Loop should be ON before the first play for the loop to start working. 2) when loop is turned on \, one last play will take place. If needed change the implementation.;
 #X text 18 7 VERSION 1 - Tabplay~ seems better implementation for this.;
+#X obj 22 345 outlet~;
+#X connect 1 0 17 0;
 #X connect 9 0 11 0;
 #X connect 10 0 12 0;
 #X coords 0 -1 1 1 120 115 2 100 100;
