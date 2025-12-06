@@ -1,4 +1,4 @@
-#N canvas 167 183 918 689 12;
+#N canvas 501 169 918 689 12;
 #X floatatom 332 257 5 0 0 0 - - - 0;
 #X obj 332 281 s selection-number;
 #X text 299 11 THIS WILL BE IN THE MAIN COMPOSITION PATCH;
@@ -155,7 +155,7 @@
 #X connect 33 0 10 1;
 #X connect 33 0 3 1;
 #X restore 332 132 pd one-shot-pads;
-#N canvas 1045 146 752 565 clip-ctrl 0;
+#N canvas 52 20 1854 977 clip-ctrl 1;
 #X obj 54 33 notein 1;
 #X obj 415 329 r selection-number;
 #X obj 54 61 sel 7 9 10;
@@ -182,7 +182,6 @@
 #X obj 208 305 bng 20 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 384 304 bng 20 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 160 131 s i-mpd-pad-10-loop;
-#X obj 384 281 r i-mpd-pad-10-loop;
 #X obj 495 124 sel 1;
 #X obj 495 149 del 100;
 #X obj 577 152 sel 1;
@@ -199,6 +198,7 @@
 #X obj 495 99 r mpd-pad-9-launch-queue;
 #X obj 208 281 r mpd-pad-9-launch-queue;
 #X text 408 44 REMOVED LED VISUALIZATION;
+#X obj 384 281 r mpd-pad-10-loop;
 #X connect 0 0 2 0;
 #X connect 0 1 15 0;
 #X connect 1 0 3 1;
@@ -212,7 +212,7 @@
 #X connect 5 0 8 0;
 #X connect 9 0 10 0;
 #X connect 11 0 12 0;
-#X connect 13 0 39 0;
+#X connect 13 0 38 0;
 #X connect 14 0 25 0;
 #X connect 15 0 14 1;
 #X connect 15 0 13 1;
@@ -224,16 +224,16 @@
 #X connect 22 0 3 0;
 #X connect 23 0 4 0;
 #X connect 24 0 5 0;
-#X connect 26 0 24 0;
-#X connect 27 0 28 0;
-#X connect 28 0 31 0;
-#X connect 29 0 30 0;
-#X connect 30 0 32 0;
-#X connect 34 0 33 0;
-#X connect 36 0 35 0;
-#X connect 37 0 29 0;
-#X connect 40 0 27 0;
-#X connect 41 0 23 0;
+#X connect 26 0 27 0;
+#X connect 27 0 30 0;
+#X connect 28 0 29 0;
+#X connect 29 0 31 0;
+#X connect 33 0 32 0;
+#X connect 35 0 34 0;
+#X connect 36 0 28 0;
+#X connect 39 0 26 0;
+#X connect 40 0 23 0;
+#X connect 42 0 24 0;
 #X restore 332 204 pd clip-ctrl;
 #X obj 112 128 tgl 40 0 mpd-pad-8-master-clock i-mpd-pad-8-master-clock 8 30 32 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 156 128 tgl 40 0 mpd-pad-9-launch-queue i-mpd-pad-9-launch-queue 9 30 32 0 12 #fcfcfc #000000 #000000 0 1;
