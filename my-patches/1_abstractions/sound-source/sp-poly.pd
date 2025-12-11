@@ -277,13 +277,14 @@
 #X msg 133 282 line 0 \, step;
 #X text 32 33 Reading parametes into text \$0-parameters \, use savestate to save abstraction parameters together with saving parent patch and loading thenm next time parent path is open, f 28;
 #X obj 73 350 text set \$0-parameters 0 0;
-#X msg 41 402 0;
+#X msg 34 422 0;
 #X obj 33 192 r \$0-loaded-sample;
-#X obj 41 378 del 200;
-#X obj 41 454 s \$0-i-loaded-sample;
-#X obj 41 427 text get \$0-parameters 0 1;
+#X obj 34 398 del 200;
+#X obj 34 474 s \$0-i-loaded-sample;
+#X obj 34 447 text get \$0-parameters 0 1;
+#X obj 34 370 bng 20 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X connect 2 0 6 0;
-#X connect 2 0 9 0;
+#X connect 2 0 12 0;
 #X connect 2 1 4 0;
 #X connect 3 0 2 0;
 #X connect 4 0 3 0;
@@ -291,6 +292,7 @@
 #X connect 8 0 1 0;
 #X connect 9 0 7 0;
 #X connect 11 0 10 0;
+#X connect 12 0 9 0;
 #X restore 23 280 pd parameter-handling;
 #X obj 23 398 outlet~;
 #X text 18 7 VERSION 0;
