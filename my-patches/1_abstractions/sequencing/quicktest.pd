@@ -1,0 +1,6 @@
+#N canvas 971 371 450 300 12;
+#X obj 157 109 text define -k aaa;
+#A set;
+#X obj 48 203 text insert aaa 10;
+#X obj 34 139 inlet;
+#X connect 2 0 1 0;

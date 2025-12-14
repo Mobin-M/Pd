@@ -265,7 +265,7 @@
 #X obj 197 120 bng 20 250 50 0 \$0-load \$0-i-load empty 23 10 0 10 #feffc6 #000000 #000000;
 #X obj 197 143 bng 20 250 50 0 \$0-play \$0-i-play empty 25 10 0 12 #00ff04 #000000 #000000;
 #X obj 20 38 inlet;
-#X obj 100 37 inlet;
+#X obj 100 32 inlet;
 #X obj 20 85 s \$0-play;
 #X obj 100 62 s \$0-velocity;
 #N canvas 711 268 533 507 parameter-handling 0;
@@ -307,8 +307,10 @@
 #X msg 266 158 vis_size 0 88;
 #X msg 358 97 vis_size 0 88;
 #X msg 298 183 vis_size 115 88;
-#X text 212 3 Basic Polyphonic sample player: (6 channels): New play does not stop the previous ones. kind on like delay., f 33;
+#X text 229 3 Basic Polyphonic sample player: (6 channels): New play does not stop the previous ones. kind on like delay., f 33;
 #X text 190 100 poly;
+#X obj 156 10 loadbang;
+#X msg 156 35 1;
 #X connect 1 0 11 0;
 #X connect 6 0 16 0;
 #X connect 7 0 9 0;
@@ -321,4 +323,6 @@
 #X connect 21 0 20 0;
 #X connect 22 0 15 0;
 #X connect 23 0 20 0;
+#X connect 26 0 27 0;
+#X connect 27 0 9 0;
 #X coords 0 -1 1 1 122 115 2 100 100;

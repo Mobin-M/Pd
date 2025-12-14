@@ -12,9 +12,9 @@
 #X obj 268 139 r \$1-one-shot-14;
 #X obj 390 139 r \$1-one-shot-15;
 #X obj 21 226 outlet;
-#X obj 71 226 outlet;
-#X obj 120 226 outlet;
-#X obj 171 226 outlet;
+#X obj 143 225 outlet;
+#X obj 268 226 outlet;
+#X obj 390 227 outlet;
 #X obj 19 103 print added-input-midi-one-shot;
 #X connect 2 0 3 0;
 #X connect 3 0 16 0;
