@@ -1,4 +1,4 @@
-#N canvas 979 20 927 977 12;
+#N canvas 617 97 927 977 12;
 #X obj 138 21 text define -k notes;
 #A set ** timer/realtime do not work here since there is no toggle to stop them. Easy to do this with a counter with desired precision (10ms) with metro 10 \; \; \; ** in general since I am not good at finger drumming \, velocity should be considered constant or discarded and hard-coded with possibility of modification using a CC \; \; \; For oneshot sequencer \; - duration of holding the note does not matter \; - velocity should be constant with a CC \; For note sequencer \; - duration is important for ADSR \; - aftertouch could be useful \; \; \; Need to keep textfile closed \, otherwise might experience lag/buginess \;;
 #X obj 177 181 inlet;
@@ -16,7 +16,7 @@
 #X obj 14 238 bng 20 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 236 272 sel 0 1, f 8;
 #N canvas 778 252 848 411 seq-timer 0;
-#X msg 343 148 1;
+#X msg 343 182 1;
 #X msg 404 184 0;
 #X obj 343 225 metro 10;
 #X text 407 226 Resolution:10ms;
@@ -35,6 +35,7 @@
 #X text 456 307 absolute time from the first bar;
 #X obj 506 356 s \$0-i-abs-time;
 #X floatatom 117 121 12 0 0 2 Absolute-Time \$0-i-abs-time \$0-abs-time-dummy 0;
+#X obj 343 129 t b b;
 #X connect 0 0 2 0;
 #X connect 1 0 2 0;
 #X connect 1 0 5 1;
@@ -45,9 +46,11 @@
 #X connect 7 0 12 0;
 #X connect 7 0 17 0;
 #X connect 8 0 5 1;
-#X connect 9 0 0 0;
+#X connect 9 0 19 0;
 #X connect 10 0 1 0;
 #X connect 11 0 8 0;
+#X connect 19 0 0 0;
+#X connect 19 1 1 0;
 #X coords 0 -1 1 1 125 50 2 100 100;
 #X restore 177 407 pd seq-timer;
 #X obj 177 354 bng 20 250 50 0 empty empty start 23 10 0 10 #fcfcfc #000000 #000000;
@@ -69,7 +72,7 @@
 #X text 2 1 DRUM SEQUENCER;
 #X obj 433 405 unpack f f;
 #X obj 610 348 text define -k \$0-sequence;
-#A set 80 \; 760 \; 1490 \; 2190 \; 3870 \; 4560 \; 5280 \;;
+#A set;
 #X msg 552 347 sort, f 5;
 #X obj 433 380 text sequence \$0-sequence;
 #X msg 433 352 line 0 \, step;
@@ -133,6 +136,7 @@
 #X obj 58 372 s \$0-rec-label;
 #X msg 151 292 0;
 #X obj 308 69 s \$0-i-UI-rec;
+#X text 505 605 Note: If \$0-sequence is empty. text sequence outputs a out of range error --> it is fine., f 36;
 #X connect 1 0 58 0;
 #X connect 2 0 14 0;
 #X connect 3 0 13 0;

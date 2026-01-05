@@ -15,7 +15,7 @@
 #X obj 44 95 t b f, f 2;
 #X obj 73 95 t b f, f 2;
 #X obj 244 18 text define -k \$0-parameters;
-#A set 0 0 0 \;;
+#A set 0.435897 0.666667 1 \;;
 #X obj 44 210 text set \$0-parameters 0 0;
 #X obj 73 254 savestate;
 #X obj 133 307 text sequence \$0-parameters;
@@ -55,7 +55,7 @@
 #X connect 15 0 1 0;
 #X connect 16 0 0 0;
 #X connect 17 0 13 0;
-#X restore 149 388 pd parameter-handling;
+#X restore 36 70 pd parameter-handling;
 #X text 20 17 VERSION 0;
 #X obj 188 205 inlet;
 #X obj 188 233 s \$0-i-wet;
