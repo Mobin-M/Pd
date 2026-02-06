@@ -1,0 +1,6 @@
+#N canvas 695 192 492 300 12;
+#X text 35 85 SAVESTATE COULD BE ONLY WITHIN CHILD ABSTRACTION NOT LOWER;
+#X obj 92 118 savestate-child;
+#A saved 41;
+#X obj 253 120 savestate-child;
+#A saved -57;
