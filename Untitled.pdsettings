@@ -1,0 +1,37 @@
+audioapi: 5
+noaudioin: False
+audioindev1: 0 2
+audioindevname1: JACK
+noaudioout: False
+audiooutdev1: 0 2
+audiooutdevname1: JACK
+audiobuf: 25
+rate: 48000
+callback: 0
+audioblocksize: 64
+midiapi: 1
+nomidiin: False
+midiindev1: 0
+midiindevname1: ALSA MIDI device #1
+nomidiout: False
+midioutdev1: 0
+midioutdevname1: ALSA MIDI device #1
+path1: /home/mobin/Documents/Pd/externals
+path2: /home/mobin/Documents/Pd/my-externals/build
+path3: /home/mobin/Documents/Pd/my-patches
+path4: /home/mobin/Documents/Pd/my-patches/1_live/filter-fx
+path5: /home/mobin/Documents/Pd/my-patches/1_live/midi
+path6: /home/mobin/Documents/Pd/my-patches/1_live/sequencing
+path7: /home/mobin/Documents/Pd/my-patches/1_live/sound-source
+path8: /home/mobin/Documents/Pd/my-patches/1_live/utilities
+path9: /home/mobin/Documents/Pd/my-patches/1_live
+path10: /home/mobin/Documents/Pd/externals/Gem
+path11: /lib/puredata/doc/5.reference
+npath: 11
+standardpath: 1
+verbose: 0
+nloadlib: 0
+defeatrt: 0
+flags: 
+zoom: 1
+loading: no
