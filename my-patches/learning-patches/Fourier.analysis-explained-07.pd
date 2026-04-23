@@ -1,4 +1,4 @@
-#N canvas 1906 -12 1920 1009 12;
+#N canvas 1920 0 1920 1009 12;
 #X obj 293 6 ../5.reference/set-dsp-tgl;
 #X msg 293 44 \; pd dsp \$1;
 #X obj 27 9 cnv 5 170 25 empty empty FOURIER\ ANALYSIS 10 15 2 15 #ff0400 #202020 0;
@@ -220,10 +220,11 @@
 #X floatatom 974 188 5 0 0 0 - - - 0;
 #X obj 802 214 expr if($f1 <= $f2 \, 1 \, 0);
 #X text 862 87 "LOW-PASS";
-#X text 205 104 "OPEN";
+#X text 125 102 "OPEN";
 #X obj 383 250 f \$0;
 #X msg 383 276 \; \$1-filter const 1;
 #X obj 296 106 bng 20 250 50 0 empty empty 1 6 10 0 12 #fcfcfc #000000 #000000;
+#X obj 224 132 cnv 10 1 120 empty empty empty 20 12 0 12 #ff0400 #404040 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
 #X connect 4 0 3 0;
