@@ -1,4 +1,4 @@
-#N canvas 1906 -12 1920 1009 12;
+#N canvas 1906 -12 1854 977 12;
 #X obj 521 9 ../5.reference/set-dsp-tgl;
 #X msg 521 47 \; pd dsp \$1;
 #X obj 27 9 cnv 5 170 25 empty empty FOURIER\ ANALYSIS 10 15 2 15 #ff0400 #202020 0;
@@ -61,7 +61,7 @@
 #X msg 893 83 \; \$1-input normalize \;;
 #X obj 652 30 bng 20 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X listbox 652 141 50 0 0 0 - - - 0;
-#N canvas 2237 131 1011 647 FFT-ANALYSIS-RESYNTHESIS 0;
+#N canvas 511 191 1011 647 FFT-ANALYSIS-RESYNTHESIS 1;
 #X obj 35 65 *~;
 #X obj 444 46 tabreceive~ \$0-window-analysis;
 #X obj 35 117 rfft~, f 6;
@@ -138,7 +138,7 @@
 #X obj 350 66 *~;
 #X obj 350 133 *~;
 #X obj 382 133 *~;
-#X obj 349 183 sqrt~;
+#X obj 349 242 sqrt~;
 #X obj 349 94 rfft~;
 #X obj 350 156 +~;
 #X connect 0 0 2 0;
