@@ -11,7 +11,7 @@
 #X msg 198 196 set 0;
 #X text 4 1 MASTER-CLOCK: VERSION 2, f 26;
 #X text 99 30 RECEIVE CLOCK ON/OFF FROM MPD;
-#X obj 128 121 nbx 3 20 0 600 0 0 bpm i-bpm BPM 50 10 0 13 #fcfcfc #000000 #000000 0 256;
+#X obj 128 121 nbx 3 20 1 600 0 0 bpm i-bpm BPM 50 10 0 13 #fcfcfc #000000 #000000 0 256;
 #X obj 103 154 r clock-on;
 #X text 257 143 SETTING MPD GUI STATE (USEFULT IF CLOCK IS TRUNED ON/OFF USING TOGGLE OBJECT), f 27;
 #X obj 103 176 sel 0 1, f 11;
@@ -27,7 +27,7 @@
 #X obj 77 147 text sequence \$0-parameters;
 #X msg 77 124 line 0 \, step;
 #X obj 16 11 text define -k \$0-parameters;
-#A set 60 \;;
+#A set 53 \;;
 #X obj 16 46 r bpm;
 #X obj 17 183 s i-bpm;
 #X connect 1 0 6 0;

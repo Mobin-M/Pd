@@ -170,6 +170,7 @@
 #X floatatom 7 28 4 0 0 1 BANK-PLAYING \$0-bank-gui \$0-bank-gui-dummy 0;
 #X obj 7 52 hradio 20 1 0 8 \$0-bank-edit \$0-bank-edit-dummy OPEN/EDIT 165 10 0 12 #fcfcfc #000000 #000000 0;
 #X text 158 105 BAR-DURATION;
+#X text 329 130 AT INPUT RECEIVES: \; 1- BANK TO LAUNCH \; 2- DURATION OF THE BAR (BAR-DURATION/STEP-NUM = STEP DURATION) \; AT OUTPUT \; 1- BANG AT CORRECT TIME BASED ON SWING AND STEP DURATION \; 2- VELOCITY(AMPLITUDE) OF EACH BANG(STEP) \; -------------------------------------------------------------- \; AS SOON AS INPUT-1 IS RECIEVED \, STEP ENGINE STARTS RUNNING \;, f 64;
 #X connect 0 0 7 0;
 #X connect 0 1 8 0;
 #X connect 2 0 0 0;
