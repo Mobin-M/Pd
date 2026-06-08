@@ -152,7 +152,7 @@
 #X obj 1088 562 bng 20 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 1088 587 s \$0-i-DRAW-ONCE;
 #X obj 1088 537 inlet;
-#X text 935 132 LEFT INPUT: RED SPECTRUM MIDDLE INPUT: BLACK SPECTRUM RIGHT INLET: DRAW ONCE, f 28;
+#X text 920 436 LEFT INPUT: RED SPECTRUM MIDDLE INPUT: BLACK SPECTRUM RIGHT INLET: DRAW ONCE, f 28;
 #X obj 1217 278 loadbang;
 #X msg 1217 303 1;
 #X obj 1217 328 s \$0-i-SCALE;
@@ -199,6 +199,14 @@
 #X obj 311 131 cnv 1 1 255 empty empty empty 20 12 0 12 #00faff #404040 0;
 #X obj 511 131 cnv 1 1 255 empty empty empty 20 12 0 12 #00faff #404040 0;
 #X obj 911 131 cnv 1 1 255 empty empty empty 20 12 0 12 #00faff #404040 0;
+#X text 1117 130 10;
+#X text 1096 160 3.162;
+#X text 1124 193 1;
+#X text 1096 222 0.316;
+#X text 1110 254 0.1;
+#X text 1089 283 0.0316;
+#X text 1103 316 0.01;
+#X text 1082 348 0.00316;
 #X connect 83 0 153 0;
 #X connect 84 0 87 0;
 #X connect 85 0 84 0;
