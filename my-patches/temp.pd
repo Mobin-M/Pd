@@ -1,5 +1,1 @@
-#N canvas 1920 0 1920 1009 12;
-#X obj 379 175 wt.synth.mono;
-#A saved /home/mobin/Documents/Sounds/Waves/long-wave-test-001.wav 30 70 26 138 \;;
-#X obj 973 471 wt.synth.mono;
-#A saved /home/mobin/Documents/Sounds/Waves/1024-test-002.wav -16 -21 -16 -31 \;;
+#N canvas 52 20 1854 977 12;

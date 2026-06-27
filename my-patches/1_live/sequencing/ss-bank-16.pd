@@ -303,8 +303,8 @@
 #X restore 394 122 pd set-swing-range;
 #X obj 645 21 inlet;
 #X text 645 3 OPEN-GUI(BANG);
-#X obj 285 35 r \$0-local-bang;
-#X msg 285 59 16, f 5;
+#X obj 284 35 r \$0-local-bang;
+#X msg 284 59 16, f 5;
 #N canvas 239 466 363 529 PARAMETER-GUI-\$0-\$1 0;
 #X obj 128 51 tgl 20 0 \$0-1 \$0-i1 empty 0 -10 0 12 #ffffff #000000 #000000 0 1;
 #X obj 148 51 tgl 20 0 \$0-2 \$0-i2 empty 0 -10 0 12 #ffffff #000000 #000000 0 1;
@@ -871,6 +871,7 @@
 #X text 31 535 TO MODIFY THE SS-BANK FOR DIFFERENT STEP NUMBER: \; 1 - MODIFY THE MESSAGE 16 TO A DIFFERENT NUMBER \; 2 - CHANGE NUMBER OF PARAMETERS IN THE STRUCTURE AND IN THE GUI \; 3- TAKE CARE OF PARAMETER MANAGEMENT TEXT FILE AND TEXT SET AND LSIT SPLIT FUNCTION PARAMETERS \;;
 #X coords 0 -1 1 1 160 20 2 100 100;
 #X restore 841 186 pd Functional-Description;
+#X obj 184 79 - 1;
 #X connect 0 0 21 0;
 #X connect 0 1 22 0;
 #X connect 0 2 23 0;
@@ -1035,10 +1036,11 @@
 #X connect 153 0 152 0;
 #X connect 156 0 162 0;
 #X connect 158 0 159 0;
-#X connect 159 0 146 1;
 #X connect 159 0 141 2;
+#X connect 159 0 172 0;
 #X connect 162 0 161 0;
 #X connect 164 0 165 0;
 #X connect 166 0 168 0;
 #X connect 167 0 166 0;
 #X connect 168 0 163 0;
+#X connect 172 0 146 1;

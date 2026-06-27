@@ -1,4 +1,4 @@
-#N canvas 377 239 818 343 12;
+#N canvas 1906 -12 1920 1009 12;
 #N canvas 582 413 1040 448 STEP-ENGINE 0;
 #X obj 27 8 inlet;
 #X obj 351 31 inlet;
@@ -165,16 +165,17 @@
 #X text 158 282 STEP-VELOCITY;
 #X text 251 1 VERSION 2: MULTI-BANK \, SIGNLE-BAR \, STEP SEQUENCER;
 #X text 251 19 STEP ENGINE \, AS REQUENSTED BY VARIATION BANK INPUT \, RUNS THE "16" STEPS WITH CORRECT TIMING \, CALCULATED THROUGH SIGNATURE INPUT \, ONLY ONCE., f 73;
-#X text 10 2 STEP-SEQUENCER(16) - 8 BANKS;
 #X obj 23 182 s \$0-bank-gui;
 #X floatatom 7 28 4 0 0 1 BANK-PLAYING \$0-bank-gui \$0-bank-gui-dummy 0;
 #X obj 7 52 hradio 20 1 0 8 \$0-bank-edit \$0-bank-edit-dummy OPEN/EDIT 165 10 0 12 #fcfcfc #000000 #000000 0;
 #X text 158 105 BAR-DURATION;
 #X text 329 130 AT INPUT RECEIVES: \; 1- BANK TO LAUNCH \; 2- DURATION OF THE BAR (BAR-DURATION/STEP-NUM = STEP DURATION) \; AT OUTPUT \; 1- BANG AT CORRECT TIME BASED ON SWING AND STEP DURATION \; 2- VELOCITY(AMPLITUDE) OF EACH BANG(STEP) \; -------------------------------------------------------------- \; AS SOON AS INPUT-1 IS RECIEVED \, STEP ENGINE STARTS RUNNING \;, f 64;
+#X obj 1 1 cnv 19 238 20 empty empty empty 20 12 0 12 #e0e0e0 #404040 0;
+#X text 10 1 STEP-SEQUENCER(16) - 8 BANKS;
 #X connect 0 0 7 0;
 #X connect 0 1 8 0;
 #X connect 2 0 0 0;
-#X connect 2 0 14 0;
+#X connect 2 0 13 0;
 #X connect 3 0 2 0;
 #X connect 5 0 6 0;
 #X connect 6 0 0 1;

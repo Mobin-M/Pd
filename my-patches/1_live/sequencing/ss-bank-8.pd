@@ -177,15 +177,15 @@
 #X connect 21 0 8 0;
 #X connect 23 0 21 0;
 #X restore 21 132 pd timed-counter;
-#X f 38;
+#X f 45;
 #X floatatom 21 156 5 0 0 0 - - - 0;
 #X obj 21 26 inlet;
-#X obj 152 26 inlet;
-#X floatatom 152 56 5 0 0 1 BAR-DURATION - - 0;
-#X obj 152 79 /;
-#X floatatom 152 103 9 0 0 1 STEP-DURATION - - 0;
+#X obj 177 26 inlet;
+#X floatatom 177 56 5 0 0 1 BAR-DURATION - - 0;
+#X obj 177 79 /;
+#X floatatom 177 103 9 0 0 1 STEP-DURATION - - 0;
 #X text 20 8 RUN-BANK(BANG);
-#X text 151 7 BAR-DURATION;
+#X text 176 7 BAR-DURATION;
 #X text 14 444 -- TRIGGERING STEP VELOCITIES AND STEPS;
 #X text 12 338 -- SETTING DELAYS;
 #X floatatom 967 54 5 0 0 3 MAYBE-USEFUL - - 0;
@@ -219,10 +219,10 @@
 #X connect 12 0 6 0;
 #X connect 12 0 5 0;
 #X connect 12 0 4 0;
-#X restore 344 122 pd set-swing-range;
+#X restore 406 122 pd set-swing-range;
 #X obj 645 21 inlet;
 #X text 645 3 OPEN-GUI(BANG);
-#X obj 285 35 r \$0-local-bang;
+#X obj 333 35 r \$0-local-bang;
 #N canvas 954 284 363 291 PARAMETER-GUI-\$0-\$1 0;
 #X obj 93 57 tgl 20 0 \$0-1 \$0-i1 empty 0 -10 0 12 #ffffff #000000 #000000 0 1;
 #X obj 113 57 tgl 20 0 \$0-2 \$0-i2 empty 0 -10 0 12 #ffffff #000000 #000000 0 1;
@@ -258,7 +258,7 @@
 #X msg 645 79 \; pd-PARAMETER-GUI-\$1-\$2 vis 1;
 #X obj 645 52 pack \$0 \$1;
 #X obj 492 807 outlet;
-#X obj 428 27 inlet;
+#X obj 540 14 inlet;
 #N canvas 955 270 727 393 PARAMETER-MANAGENMENT 0;
 #N canvas 650 178 494 404 switches 0;
 #X obj 23 16 r \$0-1, f 3;
@@ -541,7 +541,7 @@
 #X obj 492 721 r \$0-save;
 #X obj 492 771 text sequence \$0-loc-parameters;
 #X text 492 670 WHEN SAVED \, OUTLET TO THE STEP-SEQUENCER (PARENT PATCH) TO BE KEPT WITH A SAVESTATE, f 31;
-#X text 468 11 SAVESTATE-PARAMS (SELECTOR TRIMMED WITH ROUTE), f 17;
+#X text 478 40 SAVESTATE-PARAMS (SELECTOR TRIMMED WITH ROUTE), f 17;
 #N canvas 1186 45 585 668 Functional-Description 0;
 #X obj 102 102 cnv 14 155 15 empty empty FUNCTIONAL-DESCRIPTION 0 8 0 12 #ff8300 #404040 0;
 #X text 27 212 INLET 1 : (BANG) RUN-BANK \; INLET 2 : BAR DURATION \; INLET 3 : SAVED BANK PARAMETERS FROM STEP-SEQUENCER ABSTRACTION \; INLET 4 : (BANG) OPEN PARAMTER GUI \; OUTLET 1: (BANG) STEP-PLAY \; OUTLET 2: STEP-VELOCITY/LOUDNESS \;, f 68;
@@ -549,8 +549,9 @@
 #X text 31 535 TO MODIFY THE SS-BANK FOR DIFFERENT STEP NUMBER: \; 1 - MODIFY THE MESSAGE 16 TO A DIFFERENT NUMBER \; 2 - CHANGE NUMBER OF PARAMETERS IN THE STRUCTURE AND IN THE GUI \; 3- TAKE CARE OF PARAMETER MANAGEMENT TEXT FILE AND TEXT SET AND LSIT SPLIT FUNCTION PARAMETERS \;;
 #X coords 0 -1 1 1 160 20 2 100 100;
 #X restore 647 184 pd Functional-Description;
-#X msg 285 59 8, f 5;
+#X msg 333 59 8, f 5;
 #X obj 21 197 sel 1 2 3 4 5 6 7 8, f 32;
+#X obj 209 79 - 1;
 #X connect 0 0 2 0;
 #X connect 1 0 3 0;
 #X connect 2 0 20 0;
@@ -639,8 +640,8 @@
 #X connect 100 0 102 0;
 #X connect 101 0 100 0;
 #X connect 102 0 97 0;
-#X connect 106 0 81 1;
 #X connect 106 0 76 2;
+#X connect 106 0 108 0;
 #X connect 107 0 12 0;
 #X connect 107 1 13 0;
 #X connect 107 2 14 0;
@@ -650,3 +651,4 @@
 #X connect 107 6 18 0;
 #X connect 107 7 19 0;
 #X connect 107 8 69 0;
+#X connect 108 0 81 1;
