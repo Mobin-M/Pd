@@ -1,4 +1,4 @@
-#N canvas 1906 -12 1920 1009 12;
+#N canvas 52 20 1854 977 12;
 #N canvas 101 69 450 250 (subpatch) 0;
 #X array \$0-ENVELOPE 2181 float 2;
 #A color 0;
@@ -107,8 +107,8 @@
 #X connect 22 1 23 1;
 #X connect 23 0 21 0;
 #X restore 339 366 pd ARRAY-MANAGEMENT;
-#X obj 246 126 bng 15 250 50 0 \$0-clear \$0-i-clear C 19 8 0 10 #ffffff #000000 #000000;
-#X obj 197 126 tgl 15 0 \$0-edit \$0-i-edit EDIT 19 8 0 10 #ff0400 #000000 #000000 0 1;
+#X obj 256 127 bng 15 250 50 0 \$0-clear \$0-i-clear C 4 8 0 10 #ffffff #000000 #000000;
+#X obj 207 127 tgl 15 0 \$0-edit \$0-i-edit EDIT 19 8 0 10 #9f9f9f #000000 #000000 0 1;
 #X obj 98 522 spigot;
 #X obj 157 522 tgl 20 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 157 453 r \$0-edit;
@@ -124,7 +124,7 @@
 #X msg 403 125 vis \$1;
 #X obj 403 101 r \$0-edit;
 #X obj 403 150 s pd-\$0-EDIT-ENVELOPE;
-#X text 260 144 1;
+#X text 260 143 1;
 #X text 253 209 -1;
 #X obj 98 548 tabread4 \$0-ENVELOPE;
 #X text 95 698 - COULD MANUALLY DRAW OR OPEN EDIT SUBPATCH AND EXTERND AND DRAW USING FUNCTIONS \; - FOR GENERAL MODULATIONS - DO NOT USE FOR AUDIO RATE MODULATIONS LIKE LFO \; - DEPENDING ON ARRAY LENGHT COULD TAKE SOME SECONDS TO RELOAD ARRAY FROM SAVESTATE LIST \;, f 57;
@@ -180,8 +180,8 @@
 #X restore 268 463 pd EDIT-ENVELOPE;
 #X obj 132 339 s \$0-PLAY;
 #X text 129 320 FOR CURSOR;
-#X obj 101 101 cnv 19 183 20 empty empty empty 20 12 0 12 #9f9f9f #ffffff 0;
-#X text 126 101 (1-BAR)-ENVELOPE;
+#X obj 102 102 cnv 19 181 20 empty empty ===\ |...ENVELOPE...|\ === 8 10 0 12 #0400ff #ffffff 0;
+#X text 155 70 (1-BAR)-ENVELOPE;
 #X connect 1 0 8 0;
 #X connect 2 0 33 0;
 #X connect 3 0 24 0;

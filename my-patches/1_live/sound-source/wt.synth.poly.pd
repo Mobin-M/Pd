@@ -21,7 +21,7 @@
 #X obj 302 238 bng 18 250 50 0 \$0-ADSR \$0-i-ADSR ADSR 20 9 0 11 #7c7c7c #000000 #000000;
 #X obj 103 341 inlet, f 25;
 #X obj 102 102 cnv 17 256 18 empty empty ===\ |....WAVETABLE\ SYNTH....|\ === 12 9 0 12 #000000 #ffffff 0;
-#N canvas 1956 38 644 411 LOAD 1;
+#N canvas 1956 38 644 411 LOAD 0;
 #X obj 118 108 openpanel;
 #X obj 118 253 soundfiler, f 33;
 #X listbox 346 278 20 0 0 0 - - - 0;

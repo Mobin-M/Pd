@@ -1,4 +1,4 @@
-#N canvas 1906 -12 1920 1009 12;
+#N canvas 52 20 1854 977 12;
 #N canvas 297 118 1390 532 STEP-ENGINE 0;
 #X obj 27 23 inlet;
 #X obj 351 25 inlet;
@@ -166,8 +166,7 @@
 #X text 158 105 BAR-DURATION;
 #X text 65 296 LIST: MIDI-NOTE \, VELOCITY[0:1] \, OFF-DELAY[ms];
 #X text 329 130 AT INPUT RECEIVES: \; 1- BANK TO LAUNCH \; 2- DURATION OF THE BAR (BAR-DURATION/(STEP-NUM-1) = STEP DURATION) \; AT OUTPUT \; 1- A LIST: MIDI-NOTE \, VELOCITY \, OFF-DELAY -------------------------------------------------------------- \; AS SOON AS INPUT-1 IS RECIEVED \, STEP ENGINE STARTS RUNNING \;, f 68;
-#X obj 1 1 cnv 19 248 20 empty empty empty 20 12 0 12 #e0e0e0 #404040 0;
-#X text 6 1 NOTE-STEP-SEQUENCER(16) - 8 BANKS;
+#X obj 2 2 cnv 19 246 20 empty empty ==\ |..16-NOTE-STEP-SEQUENCER..|\ == 4 10 0 12 #0400ff #ffffff 0;
 #X connect 0 0 7 0;
 #X connect 2 0 0 0;
 #X connect 2 0 10 0;
