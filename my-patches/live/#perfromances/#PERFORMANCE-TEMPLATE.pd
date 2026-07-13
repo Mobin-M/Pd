@@ -1,4 +1,4 @@
-#N canvas 1920 0 589 1009 12;
+#N canvas 46 12 927 977 12;
 #X obj 15 25 master-clock;
 #A saved 81;
 #X obj 15 96 signature;
@@ -22,7 +22,7 @@
 #X obj 117 191 s SIGNATURE-2;
 #X obj 219 191 s SIGNATURE-3;
 #X obj 321 191 s SIGNATURE-4;
-#N canvas 2492 -20 1328 1009 CLIP-1:CLIP-NAME 1;
+#N canvas 979 20 927 977 CLIP-1:CLIP-NAME 1;
 #X obj 24 118 launcher 1 2;
 #X obj 682 278 step-sequencer-16;
 #A saved 1 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 88.4434 0 0 0 117.925 0 0 0 100.236 0 0 0 100.236 0 0.541667 0 1 0 0.541667 0 1 0 0.5 0 1 0 0.5 0 1 0;
