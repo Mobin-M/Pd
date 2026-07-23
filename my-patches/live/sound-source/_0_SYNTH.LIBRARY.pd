@@ -1,6 +1,7 @@
 #N canvas 61 46 678 446 12;
 #X declare -path my-patches/live/sound-source;
-#N canvas 66 32 1854 977 CLIP-1:WEIRD-DRUM 0;
+#X declare -path my-patches/live/sequencing;
+#N canvas 240 505 1390 715 CLIP-1:WEIRD-DRUM 1;
 #X obj 12 16 tgl 30 0 empty empty empty 0 -10 0 12 #ff8300 #000000 #000000 0 1;
 #X obj 12 54 switch~;
 #X obj 675 21 _LOAD.WAVE 10;
@@ -197,5 +198,6 @@
 #X connect 72 0 73 0;
 #X connect 73 0 74 0;
 #X connect 75 0 73 0;
-#X restore 11 49 pd CLIP-1:WEIRD-DRUM;
-#X obj 11 5 declare -path my-patches/live/sound-source;
+#X restore 11 66 pd CLIP-1:WEIRD-DRUM;
+#X obj 11 4 declare -path my-patches/live/sound-source;
+#X obj 11 27 declare -path my-patches/live/sequencing;
